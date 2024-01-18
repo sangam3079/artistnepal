@@ -1,0 +1,23 @@
+.overviewCard {
+	&-header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 10px;
+
+		& text {
+			text-align: left;
+			font: normal normal bold 22px/34px Poppins;
+			letter-spacing: 0px;
+			color: #404d4d;
+			opacity: 1;
+		}
+	}
+
+	&-chart {
+		//	height: 300px;
+		//margin-left: -5%;
+		//margin-right: -7%;
+	}
+}

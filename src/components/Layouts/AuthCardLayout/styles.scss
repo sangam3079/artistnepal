@@ -1,0 +1,74 @@
+.authcardlayout {
+  background-color: #F7F8F7;
+  height: 100vh;
+  padding: 200px 300px;
+  
+  &_container {
+    height: calc(100vh - 400px);
+    width: calc(100vw - 600px);
+    background-color: #fff;
+    border: none;
+    border-radius: 18px;
+    display: flex;
+    overflow: hidden;
+
+    &_left {
+      background-image: url('../../../assets/images/login.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 35%;
+      position: relative;
+
+      &_overlay {
+        background-image: linear-gradient(#8C37F6, #4D34F9, #1431FB);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.75;
+      }
+
+      &_image {
+        position: absolute;
+        top: 40%;
+        left: 35%;
+        width: 150px;
+      }
+    }
+
+    &_right {
+      width: 65%;
+      padding: 30px 40px;
+
+      &_title {
+        display: flex;
+
+        &_logo {
+          img {
+            width: 250px;
+          }
+        }
+
+        &_button {
+          a {
+            color: #041585 !important;
+          }
+
+          margin-left: auto;
+          font-size: 18px;
+          font-weight: 400;
+          padding-top: 3px;
+
+          &_image {
+            width: 15px;
+            margin-right: 6px;
+            padding-bottom: 4px;
+          }
+        }
+      }
+
+      &_body {}
+    }
+  }
+}

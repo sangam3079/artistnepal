@@ -1,0 +1,41 @@
+@mixin flexBox-row {
+	display: flex;
+	flex-direction: row;
+}
+
+@mixin flexBox-column {
+	display: flex;
+	flex-direction: column;
+}
+
+@mixin flexBox-row-align-center {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+@mixin flexBox-row-all-center {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin flexBox-column-align-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@mixin flexBox-column-all-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin hidden-input-field {
+	border: none;
+	outline: none;
+	background: none;
+}

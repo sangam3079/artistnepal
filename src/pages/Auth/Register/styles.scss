@@ -1,0 +1,38 @@
+.register {
+  padding: 50px 175px 0px 175px;
+
+  &_title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #302E2E;
+  }
+
+  &_form {
+    &_title {
+      font-size: 12px;
+      color: #404040;
+    }
+  
+    &_body {
+      &_row {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        &_input {
+          width: 48%;
+        }
+      }
+
+      &_input {
+        padding-top: 20px;
+      }
+  
+      &_button {
+        padding-top: 37px;
+        width: 60%;
+        margin: 0px auto;      
+      }
+    }
+  }
+}

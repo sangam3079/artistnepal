@@ -1,0 +1,22 @@
+.passwordinput {
+  position: relative;
+
+  &_image {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 17px;
+    left: 16px;
+  }
+
+  &_input {
+    border: 1px solid #9898989E;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px 45px;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}

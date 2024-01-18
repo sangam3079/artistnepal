@@ -1,0 +1,51 @@
+@import "../../../styles/mixins.scss";
+
+$sidebar-width: 15.57%;
+$sidebar-height: 100%;
+$header-width: 84.43%;
+$header-height: 10.27%;
+$main-width: 84.43%;
+$main-height: auto;
+
+.homePage {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	width: 100vw;
+}
+.sidebar {
+	position: fixed;
+	@include flexBox-column;
+	top: 0px;
+	left: 0px;
+	width: $sidebar-width;
+	height: $sidebar-height;
+
+	box-shadow: 7px 0px 20px #0000001a;
+	opacity: 1;
+	backdrop-filter: blur(35px);
+	-webkit-backdrop-filter: blur(35px);
+}
+
+.homeContainer {
+	background: #e7e7f6;
+}
+
+.header {
+	position: fixed;
+	right: 0;
+	z-index: 10;
+	width: $header-width;
+	height: $header-height;
+	@include flexBox-row-align-center;
+	background: #e7e7f6;
+}
+
+.main {
+	position: absolute;
+	top: 10.27%;
+	right: 0;
+	width: $main-width;
+	height: $main-height;
+	background: #e7e7f6;
+}

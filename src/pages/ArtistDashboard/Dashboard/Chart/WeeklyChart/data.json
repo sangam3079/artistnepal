@@ -1,0 +1,25 @@
+{
+	"labels": [
+		"sun",
+		"Mon",
+		"Tues",
+		"Wed",
+		"Thus",
+		"Fri",
+		"Sat"
+	],
+	"series": [
+		{
+			"className": "ct-series-b",
+			"data": [
+				10,
+				5,
+				2,
+				5,
+				50,
+				7,
+				10
+			]
+		}
+	]
+}

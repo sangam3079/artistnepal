@@ -1,0 +1,129 @@
+.signup-type-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	background: url("../assets/images/bg-img.png");
+	background-size: cover;
+	position: relative;
+}
+.title {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	& p {
+		text-align: center;
+		letter-spacing: 1.7px;
+		color: #010101;
+		opacity: 1;
+		display: flex;
+	}
+}
+.textField {
+	margin-top: -2rem;
+	margin-bottom: 2.5rem;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #1d1d1d;
+	opacity: 1;
+}
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+	.cards {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		height: 650px;
+	}
+}
+
+.signupType-card-for-artist {
+	width: 270px;
+	height: 290px;
+	background: transparent url("../assets/images/artist-manager.jpg") 0% 0%
+		no-repeat padding-box;
+	box-shadow: 0px 0px 50px #00000066;
+	//border: 8px solid #FFFFFF;
+	border-radius: 21px;
+	opacity: 1;
+	background-size: cover;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	background-position: center;
+
+	& img {
+		height: 100%;
+		width: 100%;
+	}
+}
+.signupType-card-for-artist:hover {
+	border: 5px solid #ffffff;
+}
+
+.signupType-card-for-musicCompany {
+	width: 270px;
+	height: 290px;
+	background: transparent url("../assets/images/music-label.jpg") 0% 0%
+		no-repeat padding-box;
+	box-shadow: 0px 0px 50px #00000066;
+	//border: 8px solid #FFFFFF;
+	border-radius: 21px;
+	opacity: 1;
+	background-size: cover;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	background-position: center;
+
+	& img {
+		height: 100%;
+		width: 100%;
+	}
+}
+.signupType-card-for-musicCompany:hover {
+	border: 5px solid #ffffff;
+}
+.info {
+	height: 25%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+
+	& img {
+		height: 80%;
+		width: 100%;
+	}
+}
+.infoText {
+	text-align: left;
+	color: #1d1d1d;
+	opacity: 1;
+	position: absolute;
+}
+
+.linkFooter {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #1d1d1d;
+	opacity: 1;
+	text-decoration: underline;
+}

@@ -1,0 +1,50 @@
+$navBar-height: 100%;
+$navBar-width: 100%;
+$searchBar-height: 50%;
+$searchBar-width: 40%;
+$action-items-width: 45%;
+$action-items-height: 80%;
+$search-input-width: 85%;
+$profile-div-width: 45.81%;
+$profilePic-width: 19.59%;
+
+.NavBar {
+	height: $navBar-height;
+	width: $navBar-width;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	//	padding-top: 25px;
+	z-index: 1000;
+}
+.logo {
+	//height: "100%";
+	display: flex;
+	align-items: center;
+	&-img {
+		height: 35px;
+		margin-left: -20px;
+	}
+}
+
+.actionItems {
+	width: $action-items-width;
+	height: $action-items-height;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+
+	&-notification {
+		display: flex;
+		align-items: center;
+		width: 18px;
+		height: 20px;
+		margin-right: 20px;
+	}
+	&-setting {
+		display: flex;
+		align-items: center;
+	}
+}

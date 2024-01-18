@@ -1,0 +1,27 @@
+.topProducts {
+	height: 350px;
+}
+.topProducts-header {
+	//height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	& text {
+		font: var(--unnamed-font-style-normal) normal
+			var(--unnamed-font-weight-bold) 22px/34px
+			var(--unnamed-font-family-sofia-pro);
+		letter-spacing: var(--unnamed-character-spacing-0);
+		color: var(--unnamed-color-404d4d);
+		text-align: left;
+		font: normal normal 22px/34px Poppins;
+		letter-spacing: 0px;
+		color: #404d4d;
+		opacity: 1;
+	}
+}
+
+.topProducts-list {
+	margin-top: 10px;
+	//height: 600px;
+}

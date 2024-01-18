@@ -1,0 +1,55 @@
+/*.accordion {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+}
+
+.accordion__item + .accordion__item {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+*/
+.accordion__button {
+	cursor: pointer;
+	width: 100%;
+	text-align: left;
+	border: none;
+}
+
+.accordion__button:before {
+	display: flex;
+	content: "";
+	height: 20px;
+	width: 20px;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 4px solid currentColor;
+	border-right: 4px solid currentColor;
+	transform: rotate(-45deg);
+}
+
+.accordion__button[aria-expanded="true"]::before,
+.accordion__button[aria-selected="true"]::before {
+	transform: rotate(45deg);
+}
+
+[hidden] {
+	display: none;
+}
+
+.accordion__panel {
+	padding: 20px;
+	animation: fadein 0.35s ease-in;
+}
+
+/* -------------------------------------------------- */
+/* ---------------- Animation part ------------------ */
+/* -------------------------------------------------- */
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

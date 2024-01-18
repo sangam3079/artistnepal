@@ -1,0 +1,20 @@
+.textinput {
+  position: relative;
+
+  &_image {
+    width: 20px;
+    position: absolute;
+    top: 19px;
+    left: 14px;
+  }
+
+  &_input {
+    border: 1px solid #9898989E;
+    border-radius: 10px;
+    width: 100%;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}

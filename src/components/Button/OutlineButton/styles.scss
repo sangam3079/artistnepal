@@ -1,0 +1,15 @@
+.outlinebutton {
+	&_button {
+		border: 1.5px solid #29292966;
+		border-radius: 23px;
+		padding: 15px 0px;
+		background-color: #fff;
+		width: 100%;
+		font-size: 16px;
+
+		&_image {
+			height: 25px;
+			margin-right: 30px;
+		}
+	}
+}

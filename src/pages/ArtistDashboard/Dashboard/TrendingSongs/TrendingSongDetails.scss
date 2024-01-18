@@ -1,0 +1,71 @@
+.topProductDetail {
+	width: 100%;
+	//@include flexBox-row-align-center;
+	//justify-content: space-between;
+	display: grid;
+	grid-template-columns: 85% 10%;
+	grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+	//display: flex;
+	//flex-direction: row;
+	//justify-content: space-between;
+	//align-items: center;
+
+	&-left {
+		height: 65px;
+		width: 100%;
+		//@include flexBox-row;
+		display: flex;
+		flex-direction: row;
+
+		&-image {
+			height: 50px;
+			width: 50px;
+		}
+
+		&-info {
+			margin-left: 5%;
+			//@include flexBox-column;
+			display: flex;
+			flex-direction: column;
+
+			&-name {
+				font: var(--unnamed-font-style-normal) normal
+					var(--unnamed-font-weight-medium) var(--unnamed-font-size-16) / 24px
+					var(--unnamed-font-family-sofia-pro);
+				letter-spacing: var(--unnamed-character-spacing-0);
+				text-align: left;
+				font: normal normal bold 16px/24px Sofia Pro;
+				letter-spacing: 0px;
+				color: #404d4db3;
+				text-transform: capitalize;
+				opacity: 1;
+			}
+
+			&-price {
+				font: var(--unnamed-font-style-normal) normal
+					var(--unnamed-font-weight-bold) var(--unnamed-font-size-18) /
+					var(--unnamed-line-spacing-28) var(--unnamed-font-family-sofia-pro);
+				letter-spacing: var(--unnamed-character-spacing-0);
+				text-align: left;
+				font: normal normal medium 16px/28px Sofia Pro;
+				letter-spacing: 0px;
+				color: #404d4ded;
+				text-transform: capitalize;
+				opacity: 1;
+			}
+		}
+	}
+
+	&-right {
+		//@include flexBox-column-align-center;
+
+		&-info-streams {
+			text-align: left;
+			font: normal normal bold 16px/28px Sofia Pro;
+			letter-spacing: 0px;
+			color: #404d4ded;
+			text-transform: capitalize;
+			opacity: 1;
+		}
+	}
+}
